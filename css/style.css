@@ -45,7 +45,7 @@ a {
 .section-container {
   max-width: 120rem;
   margin: 0 auto;
-  width: 96%;
+  width: 94%;
 }
 
 /* -----Header----- */
@@ -53,6 +53,7 @@ a {
 .header {
   position: relative;
   padding-bottom: 85px;
+  overflow-x: hidden;
 }
 
 .header::before {
@@ -110,6 +111,10 @@ a {
   column-gap: 2.5rem;
 }
 
+.header-navbar-start-logo {
+  width: 16rem;
+}
+
 .header-navbar-end {
   margin-top: 3.5rem;
 }
@@ -151,6 +156,8 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 2.5rem;
+  z-index: 1;
+  position: relative;
 }
 
 .header-content-title {
@@ -254,6 +261,10 @@ a {
   color: #ffffff;
 }
 
+.header-content-text--mobile {
+  display: none;
+}
+
 .header-content-text-pink {
   color: #cdaeae;
 }
@@ -266,6 +277,14 @@ a {
   letter-spacing: 0.015em;
   color: #cdaeae;
   margin-top: 1.5rem;
+}
+
+.header-hamburger-icon {
+  display: none;
+}
+
+.header-navbar-mobile-links {
+  display: none;
 }
 
 /* -----Online Coaching----- */
@@ -381,13 +400,13 @@ a {
 .online-coaching-end-text-quotation:nth-child(1) {
   position: absolute;
   top: -7.5rem;
-  left: -4.5rem;
+  left: 0;
 }
 
 .online-coaching-end-text-quotation:nth-child(2) {
   position: absolute;
   bottom: -7.5rem;
-  right: -2.5rem;
+  right: 0;
   transform: rotate(180deg);
 }
 
@@ -474,6 +493,10 @@ a {
 
 .kb-plan-start-title-light {
   color: #e5e5e5;
+}
+
+.kb-plan-start-title-light-hide {
+  display: none;
 }
 
 .kb-plan-start-text {
@@ -707,17 +730,17 @@ a {
 .testimonials-container {
   max-width: 134rem;
   margin: 0 auto;
-  width: 96%;
+  width: 94%;
   position: relative;
 }
 
 .testimonials-title-img {
-  width: 70rem;
+  width: 75.8rem;
   object-fit: cover;
   position: absolute;
   top: -50px;
-  left: -65px;
-  z-index: 0;
+  left: -80px;
+  z-index: 1;
 }
 
 .testimonials-content {
@@ -726,7 +749,7 @@ a {
   align-items: center;
   gap: 3.5rem 5rem;
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding-bottom: 45px;
 }
 
@@ -849,6 +872,7 @@ a {
 .testimonials-end-img > img {
   width: 100%;
   margin: 0 auto;
+  border-radius: 10px;
 }
 
 .testimonials-end-img::before {
@@ -862,4 +886,354 @@ a {
   box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   z-index: 1;
+}
+
+/* -----Booking-Consultaion----- */
+
+.booking {
+  background-image: url('../assets//book-consultation.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0;
+  margin-top: 2.5rem;
+}
+
+.booking::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(53, 51, 51, 0.85);
+  backdrop-filter: blur(8.5px);
+}
+
+.booking-content {
+  position: relative;
+}
+
+.booking-title {
+  font-size: 8.1rem;
+  font-weight: 700;
+  line-height: 10.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cdaeae;
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.booking-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.065em;
+  color: #e5e5e5;
+  margin-top: 0.85rem;
+}
+
+.booking-form {
+  padding: 35px;
+  border: 2px solid rgba(250, 250, 250, 0.35);
+  border-radius: 5px;
+  margin-top: 3.5rem;
+}
+
+.booking-form-group {
+  margin-bottom: 2rem;
+}
+
+.booking-form-group:last-child {
+  margin-bottom: 0;
+}
+
+.booking-form-group > label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #e5e5e5;
+  margin-bottom: 0.85rem;
+  display: block;
+}
+
+.booking-form-group > input {
+  max-width: 60rem;
+  width: 100%;
+  height: 4.2rem;
+  border: 2px solid rgba(250, 250, 250, 0.35);
+  backdrop-filter: blur(12px);
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #e5e5e5;
+  padding: 0 15px;
+  background-color: transparent;
+}
+
+.booking-form-group > input:focus,
+.booking-form-group > input:active {
+  outline: none;
+  border-color: #e5e5e5;
+}
+
+.booking-form-group-flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem 5rem;
+  flex-wrap: wrap;
+  margin: 2.5rem 0;
+}
+
+.booking-form-group-flex:last-child {
+  margin-bottom: 0;
+}
+
+.booking-form-group-flex > div {
+  flex: 1 1 33.333%;
+}
+
+.booking-form-group-radio-title {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  letter-spacing: 0.065em;
+  color: #e5e5e5;
+  margin-bottom: 1.25rem;
+  display: block;
+}
+
+.booking-form-group-radio-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.booking-form-group-radio-item > label {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2rem;
+  letter-spacing: 0.065em;
+  color: #e5e5e5;
+  display: block;
+  cursor: pointer;
+  margin-bottom: 0.85rem;
+}
+
+.booking-form-group-radio-1 .booking-form-group-radio-item > label,
+.booking-form-group-radio-2 .booking-form-group-radio-item > label,
+.booking-form-group-radio-4 .booking-form-group-radio-item > label {
+  width: 25rem;
+}
+
+.booking-form-group-radio-3 .booking-form-group-radio-item > label {
+  width: 38rem;
+}
+
+.booking-form-group-radio-item > input[type='radio'] {
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 2px solid rgba(250, 250, 250, 0.35);
+  border-radius: 50%;
+  cursor: pointer;
+  appearance: none;
+  outline: none;
+}
+
+.booking-form-group-radio-item > input[type='radio']:checked {
+  background-color: #e5e5e5;
+}
+
+.booking-form-btn {
+  display: block;
+  width: 19.2rem;
+  height: 4.2rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* -----Contact-Me----- */
+
+.contact {
+  background-image: url('../assets/contact-me.png');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 0 50px;
+  margin-top: 2.5rem;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(205, 174, 174, 0.29);
+  backdrop-filter: blur(8.5px);
+}
+
+.contact-content {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-title {
+  font-size: 8.1rem;
+  font-weight: 700;
+  line-height: 10.4rem;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: #353535;
+  text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+}
+
+.contact-text {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+}
+
+.contact-form {
+  margin-top: 5rem;
+}
+
+.contact-form-group {
+  margin-bottom: 2rem;
+}
+
+.contact-form-group:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.contact-form-group > label {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+  margin-bottom: 0.85rem;
+  display: block;
+}
+
+.contact-form-group > input {
+  max-width: 60rem;
+  width: 100%;
+  height: 4.2rem;
+  border: 2px solid #353535;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+  padding: 0 15px;
+  background-color: transparent;
+}
+
+.contact-form-group > input:focus,
+.contact-form-group > input:active {
+  outline: none;
+  border-color: #353535;
+}
+
+.contact-form-group > textarea {
+  width: 100%;
+  height: 20rem;
+  border: 2px solid #353535;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+  padding: 15px;
+  background-color: transparent;
+  resize: vertical;
+}
+
+.contact-form-group > textarea:focus,
+.contact-form-group > textarea:active {
+  outline: none;
+  border-color: #353535;
+}
+
+.contact-form-btn {
+  display: block;
+  width: 19.2rem;
+  height: 4.2rem;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: 0;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: auto;
+  margin-top: 3.5rem;
+}
+
+/* -----Footer----- */
+
+.footer {
+  background-color: #ffffff;
+  padding: 25px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-credit-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0.11em;
+  color: #1e302b;
+}
+
+.footer-credit > span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  column-gap: 2.5rem;
+}
+
+.footer-bdf-logo {
+  width: 14.5rem;
 }

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <!-- Website Title -->
     <title>Beccie Dunn Fitness</title>
     <!-- Google Fonts -->
@@ -13,6 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Jost:wght@600;700&family=Kumbh+Sans:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome Icon -->
+    <script
+      src="https://kit.fontawesome.com/6255250c8f.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
@@ -28,22 +34,31 @@
         />
         <nav class="header-navbar">
           <div class="header-navbar-start">
-            <a href="#">
+            <!-- <a href="#">
               <img src="./assets/home-icon.svg" alt="Home Icon" />
-            </a>
-            <a href="#">
-              <img src="./assets/BDF-icon.svg" alt="Beccie Dunn Fitness Icon" />
+            </a> -->
+            <a href="./index.html">
+              <img
+                src="./assets/bdf-header-logo-trimmy.png"
+                alt="Beccie Dunn Fitness Icon"
+                class="header-navbar-start-logo"
+              />
             </a>
           </div>
           <div class="header-navbar-end">
             <div class="header-navbar-end-links">
-              <a href="#" class="header-navbar-end-link">About</a>
-              <a href="#" class="header-navbar-end-link">Kettle Bell Plan</a>
-              <a href="#" class="header-navbar-end-link">Testimonials</a>
-              <a href="#" class="header-navbar-end-link">Contact</a>
-              <a href="#" class="header-navbar-end-link-btn">Online Coaching</a>
+              <a href="#about" class="header-navbar-end-link">About</a>
+              <a href="#KBP" class="header-navbar-end-link">Kettle Bell Plan</a>
+              <a href="#testimonials" class="header-navbar-end-link"
+                >Testimonials</a
+              >
+              <a href="#contact" class="header-navbar-end-link">Contact</a>
+              <a href="#online-coaching" class="header-navbar-end-link-btn"
+                >Online Coaching</a
+              >
             </div>
           </div>
+          <i class="header-hamburger-icon fas fa-bars"></i>
         </nav>
       </div>
       <div class="section-container">
@@ -56,15 +71,15 @@
               Goals
             </h1>
             <div class="header-content-actions">
-              <a href="#" class="header-content-btn-primary"
+              <a href="#book-consultation" class="header-content-btn-primary"
                 >Book Consultation</a
               >
-              <a href="#" class="header-content-btn-secondary"
+              <a href="#online-coaching" class="header-content-btn-secondary"
                 >Explore Online Coaching</a
               >
             </div>
           </div>
-          <div class="header-content-end">
+          <div class="header-content-end box">
             <div class="header-content-circle">
               <img
                 class="header-content-circle-img"
@@ -72,7 +87,7 @@
                 alt="Beccie Dunn Fitness"
               />
 
-              <p class="header-content-text">
+              <p class="header-content-text header-content-text--desktop">
                 “Are <span class="header-content-text-pink">you</span> looking
                 for someone to hold you accountable and guide you through your
                 <span class="header-content-text-pink">fitness journey</span> ?
@@ -84,15 +99,36 @@
                 </span>
               </p>
             </div>
+            <p class="header-content-text header-content-text--mobile">
+              “Are <span class="header-content-text-pink">you</span> looking for
+              someone to hold you accountable and guide you through your
+              <span class="header-content-text-pink">fitness journey</span> ? I
+              can help! Whatever your goal,
+              <span class="header-content-text-pink">we can achieve it!</span>”
+              <span class="header-content-text-name">
+                Beccie Dunn Fitness
+              </span>
+            </p>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- Mobile-Menu -->
+    <div class="header-navbar-mobile-links fade-in-bottom">
+      <a href="#about" class="header-navbar-mobile-link">About</a>
+      <a href="#KBP" class="header-navbar-mobile-link">Kettle Bell Plan</a>
+      <a href="#testimonials" class="header-navbar-mobile-link">Testimonials</a>
+      <a href="#contact" class="header-navbar-mobile-link">Contact</a>
+      <a href="#online-coaching" class="header-navbar-mobile-link-btn"
+        >Online Coaching</a
+      >
+    </div>
+
     <!-- Main-Content -->
     <main>
       <!-- Online-Coaching-Section -->
-      <section class="online-coaching">
+      <section id="online-coaching" class="online-coaching">
         <div class="section-container">
           <div class="online-coaching-content">
             <div class="online-coaching-start">
@@ -191,10 +227,12 @@
                 </svg>
               </p>
               <div class="online-coaching-end-actions">
-                <a href="#" class="online-coaching-end-btn-primary"
+                <a
+                  href="#book-consultation"
+                  class="online-coaching-end-btn-primary"
                   >Book Consultation</a
                 >
-                <a href="#" class="online-coaching-end-btn-secondary"
+                <a href="#about" class="online-coaching-end-btn-secondary"
                   >More About Me</a
                 >
               </div>
@@ -204,13 +242,17 @@
       </section>
 
       <!-- KB-Plan-Section -->
-      <section class="kb-plan">
+      <section id="KBP" class="kb-plan">
         <div class="section-container">
           <div class="kb-plan-content">
             <div class="kb-plan-start">
               <h2 class="kb-plan-start-title">
                 6 Week <br />
                 <span class="kb-plan-start-title-light">Kettle Bell</span>
+                <span
+                  class="kb-plan-start-title-light kb-plan-start-title-light-hide"
+                  >Plan</span
+                >
               </h2>
               <p class="kb-plan-start-text">
                 I understand all the information you will receive can be
@@ -275,7 +317,7 @@
       </section>
 
       <!-- About-Section -->
-      <section class="about-bdf">
+      <section id="about" class="about-bdf">
         <div class="section-container">
           <div class="about-bdf-content">
             <div class="about-bdf-start">
@@ -332,10 +374,14 @@
                 <span class="about-bdf-start-socials-text">
                   Join me on social!
                 </span>
-                <a href="#"
+                <a
+                  href="https://www.instagram.com/becciedunnfitness"
+                  target="_blank"
                   ><img src="./assets/instagram-icon.svg" alt="Instagram Icon"
                 /></a>
-                <a href="#"
+                <a
+                  href="https://www.tiktok.com/@becciedunnfitness?lang=en"
+                  target="_blank"
                   ><img src="./assets/tiktok-icon.svg" alt="TikTok Icon"
                 /></a>
               </div>
@@ -357,7 +403,7 @@
       </section>
 
       <!-- Testimonials-Section -->
-      <section class="testimonials">
+      <section id="testimonials" class="testimonials">
         <div class="testimonials-container">
           <img
             class="testimonials-title-img"
@@ -540,34 +586,301 @@
             <div class="testimonials-end">
               <div class="testimonials-end-img">
                 <img
-                  src="./assets/testimonials-1.png"
+                  src="./assets/testimonials-5.png"
                   alt="Client's Testimonials"
                 />
               </div>
               <div class="testimonials-end-img">
                 <img
-                  src="./assets/testimonials-2.png"
+                  src="./assets/testimonials-4.jpeg"
                   alt="Client's Testimonials"
                 />
               </div>
               <div class="testimonials-end-img">
                 <img
-                  src="./assets/testimonials-3.png"
+                  src="./assets/testimonials-6.png"
                   alt="Client's Testimonials"
                 />
               </div>
             </div>
           </div>
           <div class="testimonials-start-action">
-            <a href="#" class="testimonials-start-btn-primary"
+            <a href="#book-consultation" class="testimonials-start-btn-primary"
               >Book Consultation</a
             >
-            <a href="#" class="testimonials-start-btn-secondary"
+            <a href="#about" class="testimonials-start-btn-secondary"
               >More About Me</a
             >
           </div>
         </div>
       </section>
+
+      <!-- Book-Consultation -->
+      <section id="book-consultation" class="booking">
+        <div class="section-container">
+          <div class="booking-content">
+            <h2 class="booking-title">Book Consultation</h2>
+            <p class="booking-text">
+              I’m charging an initial deposit of just £20, which will then come
+              off your initial session. <br />
+              Please answer the below questions and hit send, I look forward to
+              hearing from you!
+            </p>
+            <form class="booking-form">
+              <div class="booking-form-group">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="booking-form-group">
+                <label for="email">Your Email (required)</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="booking-form-group-flex">
+                <div
+                  class="booking-form-group-radio booking-form-group-radio-1"
+                >
+                  <h4 class="booking-form-group-radio-title">
+                    1. What are your goals?
+                  </h4>
+                  <div class="booking-form-group-radio-item">
+                    <label for="weight-loss">Weight Loss</label>
+                    <input
+                      type="radio"
+                      id="weight-loss"
+                      name="goals"
+                      value="weight-loss"
+                      required
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="build-muscle">Build Muscle</label>
+                    <input
+                      type="radio"
+                      id="build-muscle"
+                      name="goals"
+                      value="build-muscle"
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="look-good-&-feel-good"
+                      >Look good, feel good</label
+                    >
+                    <input
+                      type="radio"
+                      id="look-good-&-feel-good"
+                      name="goals"
+                      value="look-good-&-feel-good"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="booking-form-group-radio booking-form-group-radio-2"
+                >
+                  <h4 class="booking-form-group-radio-title">2. I am</h4>
+                  <div class="booking-form-group-radio-item">
+                    <label for="female">Female</label>
+                    <input
+                      type="radio"
+                      id="female"
+                      name="gender"
+                      value="female"
+                      required
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender" value="male" />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="prefer-not-to-disclose"
+                      >Prefer not to disclose</label
+                    >
+                    <input
+                      type="radio"
+                      id="prefer-not-to-disclose"
+                      name="gender"
+                      value="prefer-not-to-disclose"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="booking-form-group-flex">
+                <div
+                  class="booking-form-group-radio booking-form-group-radio-3"
+                >
+                  <h4 class="booking-form-group-radio-title">
+                    3. What is currently preventing you from achieving your
+                    goal?
+                  </h4>
+                  <div class="booking-form-group-radio-item">
+                    <label for="I’ve-not-seen-results"
+                      >I’ve not seen results</label
+                    >
+                    <input
+                      type="radio"
+                      id="I’ve-not-seen-results"
+                      name="preventing-goals"
+                      value="I’ve-not-seen-results"
+                      required
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="I’ve-lost-motivation"
+                      >I’ve lost motivation</label
+                    >
+                    <input
+                      type="radio"
+                      id="I’ve-lost-motivation"
+                      name="preventing-goals"
+                      value="I’ve-lost-motivation"
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="I’m-bored-of-my-current-workout-routine"
+                      >I’m bored of my current workout routine</label
+                    >
+                    <input
+                      type="radio"
+                      id="I’m-bored-of-my-current-workout-routine"
+                      name="preventing-goals"
+                      value="I’m-bored-of-my-current-workout-routine"
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="I’ve-been-injured">I’ve been injured</label>
+                    <input
+                      type="radio"
+                      id="I’ve-been-injured"
+                      name="preventing-goals"
+                      value="I’ve-been-injured"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="booking-form-group-radio booking-form-group-radio-4"
+                >
+                  <h4 class="booking-form-group-radio-title">4. I am</h4>
+                  <div class="booking-form-group-radio-item">
+                    <label for="18-to-24">18 to 24</label>
+                    <input
+                      type="radio"
+                      id="18-to-24"
+                      name="age"
+                      value="18-to-24"
+                      required
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="25-to-29">25 to 29</label>
+                    <input
+                      type="radio"
+                      id="25-to-29"
+                      name="age"
+                      value="25-to-29"
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="30-to-39">30 to 39</label>
+                    <input
+                      type="radio"
+                      id="30-to-39"
+                      name="age"
+                      value="30-to-39"
+                    />
+                  </div>
+                  <div class="booking-form-group-radio-item">
+                    <label for="Over-40">Over 40</label>
+                    <input
+                      type="radio"
+                      id="Over-40"
+                      name="age"
+                      value="Over-40"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="booking-form-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact-Section -->
+      <div id="contact" class="contact">
+        <div class="section-container">
+          <div class="contact-content">
+            <h2 class="contact-title">Contact Me</h2>
+            <p class="contact-text">
+              Have a general question? Please do get in touch!
+            </p>
+            <form class="contact-form">
+              <div class="contact-form-group">
+                <label for="name">Your Name (required)</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="contact-form-group">
+                <label for="email">Your E-mail (required)</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="contact-form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="contact-form-btn">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="section-container">
+          <div class="footer-content">
+            <div class="footer-credit">
+              <span class="footer-credit-text">Website Design</span>
+              <a
+                href="https://www.instagram.com/adesignjem/"
+                target="_blank"
+                class="footer-credit-text"
+                >@adesignjem</a
+              >
+              <a
+                href="https://adesignjem.com/"
+                target="_blank"
+                class="footer-credit-text"
+                >adesignjem.com</a
+              >
+            </div>
+            <div class="footer-social">
+              <a href="/index.html" class="footer-social-link">
+                <img
+                  src="./assets/bdf-footer-logo.png"
+                  alt="Beccie Dunn Fitness"
+                  class="footer-bdf-logo"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/becciedunnfitness"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img src="./assets/instagram-icon.svg" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@becciedunnfitness?lang=en"
+                target="_blank"
+                class="footer-social-link"
+              >
+                <img src="./assets/tiktok-icon.svg" alt="TikTok" />
+              </a>
+            </div>
+            <div class="footer-nothing" />
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <!-- Mobile-Menu Script -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>

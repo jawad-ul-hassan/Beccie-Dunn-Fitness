@@ -1,6 +1,542 @@
+@media (max-width: 1215px) {
+  .kb-pan-start-title-end {
+    display: none;
+  }
+
+  .kb-plan-start-title-light-hide {
+    display: inline-block;
+  }
+
+  .kb-plan-content {
+    align-items: center;
+  }
+
+  .kb-plan-end {
+    width: 45rem;
+  }
+
+  .kb-plan-end-box-list {
+    padding: 0 35px;
+    padding-bottom: 50px;
+  }
+}
+
 @media (max-width: 1200px) {
   .about-bdf .section-container {
     margin-right: 0;
     width: 98%;
+  }
+
+  .header-content-title {
+    font-size: 8.1rem;
+  }
+
+  .header-content-actions {
+    flex-wrap: wrap;
+  }
+
+  .header-title-img {
+    width: 72rem;
+  }
+
+  .header-navbar-end-links {
+    column-gap: 5rem;
+  }
+
+  .online-coaching-content {
+    column-gap: 3.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .testimonials-title-img {
+    display: none;
+  }
+
+  .testimonials-start-title {
+    padding-top: 65px;
+  }
+}
+
+@media (max-width: 992px) {
+  .online-coaching-content {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .online-coaching-content {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  .online-coaching-end {
+    margin: 0 auto;
+    max-width: 60rem;
+    width: 100%;
+  }
+
+  .online-coaching-start-title > br {
+    display: none;
+  }
+
+  .online-coaching-end-btn-primary {
+    width: 100%;
+  }
+
+  .online-coaching-end-btn-secondary {
+    width: 100%;
+  }
+}
+
+@media (max-width: 925px) {
+  .header-title-img {
+    width: 50rem;
+    top: 50%;
+  }
+
+  .header-content-circle {
+    width: 40rem;
+    height: 40rem;
+  }
+
+  .header-content-circle::before {
+    width: 38rem;
+    height: 38rem;
+  }
+
+  .header-content-circle-img {
+    width: 20rem;
+    top: -2.5rem;
+  }
+
+  .header-content-text {
+    right: -0.5rem;
+    top: -2.5rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .header-navbar-end-links {
+    column-gap: 4.5rem;
+  }
+
+  .kb-plan-content {
+    flex-direction: column;
+    row-gap: 5rem;
+    padding: 65px 0;
+  }
+
+  .kb-plan-end {
+    width: 100%;
+  }
+
+  .about-bdf-end {
+    width: 32.5rem;
+  }
+
+  .testimonials-content {
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+
+  .testimonials-end {
+    width: 100%;
+  }
+
+  .booking,
+  .contact {
+    padding: 65px 0;
+  }
+}
+
+@media (max-width: 792px) {
+  .header {
+    padding-bottom: 65px;
+    width: auto;
+  }
+
+  .header-title-img {
+    display: none;
+  }
+
+  .header-content {
+    flex-direction: column;
+    row-gap: 5rem;
+    padding: 0;
+    width: auto;
+  }
+
+  .header::after {
+    display: none;
+  }
+
+  .header::before {
+    width: 100%;
+  }
+
+  .header-content-start {
+    order: 2;
+    padding: 0 25px;
+    width: auto;
+  }
+
+  .header-content-title {
+    text-align: center;
+  }
+
+  .header-content-btn-primary,
+  .header-content-btn-secondary {
+    width: 100%;
+  }
+
+  .header-content-end {
+    width: auto;
+    background: #181616;
+    padding: 0 25px;
+    padding-top: 125px;
+    padding-bottom: 65px;
+  }
+
+  .box {
+    --mask: radial-gradient(
+          45.07px at 50% calc(100% - 62.5px),
+          #000 99%,
+          #0000 101%
+        )
+        calc(50% - 50px) 0/100px 100%,
+      radial-gradient(45.07px at 50% calc(100% + 37.5px), #0000 99%, #000 101%)
+        50% calc(100% - 25px) / 100px 100% repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+
+  .header-content-circle {
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    background: linear-gradient(
+        158.11deg,
+        rgba(255, 178, 178, 0.008) 11.44%,
+        rgba(49, 22, 219, 0.2) 85.67%
+      ),
+      #cdaeae;
+
+    backdrop-filter: blur(10px);
+
+    position: relative;
+  }
+
+  .header-content-circle::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -1;
+    border: 3.5px dashed rgba(255, 255, 255, 0.75);
+    animation: spin 45s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
+
+  .header-content-circle::before {
+    display: none;
+  }
+
+  .header-content-circle-img {
+    width: 30rem;
+    height: 100%;
+    object-fit: cover;
+    top: 10px;
+    margin: 0 auto;
+  }
+
+  .header-content-text {
+    right: 0;
+    top: 0;
+    position: static;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    margin-top: 2.5rem;
+  }
+
+  .header .section-container {
+    width: 100%;
+  }
+
+  .header-content-text--mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .header-content-text--desktop {
+    display: none;
+  }
+
+  .header-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    padding-top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    background: #817d7d;
+    border-radius: 50px;
+    padding: 10px 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .header-navbar-end {
+    display: none;
+  }
+
+  .header-hamburger-icon {
+    display: block;
+    color: #eeeeee;
+    font-size: 2.7rem;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .header-navbar-start > a {
+    display: block;
+    margin-left: 15px;
+  }
+
+  .header-navbar-start-logo {
+    width: 12rem;
+  }
+
+  .header-navbar-mobile-links.active {
+    display: flex;
+  }
+
+  .header-navbar-mobile-links {
+    flex-direction: column;
+    row-gap: 1.25rem;
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    background: #817d7d;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    z-index: 5;
+    padding: 15px 20px;
+    border-radius: 10px;
+  }
+
+  .header-navbar-mobile-link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 0px 2px 2px rgb(0 0 0 / 20%);
+  }
+
+  .header-navbar-mobile-link-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 15px;
+    height: 4.2rem;
+    border-radius: 10px;
+    background: #605288;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    color: #ffffff;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    margin-top: 0.5rem;
+  }
+
+  .fade-in-bottom {
+    -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
+      both;
+    animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+
+  @-webkit-keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(50px);
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  .about-bdf-end {
+    display: none;
+  }
+
+  .about-bdf-start-desc {
+    width: 100%;
+  }
+
+  .online-coaching-start-title,
+  .online-coaching-start-list-item-no,
+  .kb-plan-start-title,
+  .about-bdf-start-title,
+  .testimonials-start-title,
+  .booking-title,
+  .contact-title {
+    font-size: 5.1rem;
+    line-height: 6.4rem;
+  }
+
+  .kb-plan-start-title > br {
+    display: none;
+  }
+
+  .online-coaching-start-list-item-no {
+    width: 3.5rem;
+  }
+
+  .online-coaching-start-list-item {
+    align-items: flex-start;
+    margin-bottom: 2.5rem;
+  }
+
+  .kb-plan-start-btn-primary,
+  .kb-plan-start-btn-secondary {
+    width: 100%;
+    height: 6.4rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+  }
+
+  .about-bdf-start {
+    padding-right: 0;
+  }
+
+  .about-bdf .section-container {
+    margin: 0 auto;
+    width: 94%;
+  }
+
+  .footer-nothing {
+    display: none;
+  }
+
+  .testimonials-start-action {
+    flex-direction: column;
+  }
+
+  .testimonials-start-card {
+    padding: 20px;
+  }
+
+  .booking-form {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 550px) {
+  .footer-content {
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+
+  .footer-credit {
+    order: 2;
+  }
+
+  .online-coaching-start-title,
+  .online-coaching-start-list-item-no,
+  .kb-plan-start-title,
+  .about-bdf-start-title,
+  .testimonials-start-title,
+  .booking-title,
+  .contact-title {
+    font-size: 4rem;
+    line-height: 5.5rem;
+    text-align: center;
+  }
+
+  .booking-form {
+    padding: 15px;
+  }
+
+  .booking-form-group-radio-3 .booking-form-group-radio-item > label {
+    width: 25rem;
+  }
+
+  .booking-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .testimonials-start-btn-primary,
+  .testimonials-start-btn-secondary {
+    width: 100%;
+  }
+
+  .about-bdf-start-quote {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  .kb-plan-end-box-list {
+    margin-top: 3.5rem;
+    padding: 0 25px;
+    padding-bottom: 50px;
+  }
+
+  .kb-plan-start-list-item-circle {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .kb-plan-start-list-item {
+    font-size: 2rem;
+    line-height: 2.8rem;
+    column-gap: 1.5rem;
+  }
+
+  .header-content-circle {
+    width: 32rem;
+    height: 32rem;
+  }
+
+  .header-content-circle-img {
+    width: 22rem;
+  }
+
+  .header-content-circle-img {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
