@@ -153,6 +153,7 @@
   .header {
     padding-bottom: 65px;
     width: auto;
+      overflow-x: hidden;
   }
 
   .header-title-img {
