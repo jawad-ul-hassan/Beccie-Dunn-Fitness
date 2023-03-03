@@ -821,18 +821,23 @@
             <p class="contact-text">
               Have a general question? Please do get in touch!
             </p>
-            <form class="contact-form">
+            <form
+              class="contact-form"
+              method="post"
+              autocomplete="off"
+              name="contact-me"
+            >
               <div class="contact-form-group">
                 <label for="name">Your Name (required)</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="Name" required />
               </div>
               <div class="contact-form-group">
                 <label for="email">Your E-mail (required)</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="Email" required />
               </div>
               <div class="contact-form-group">
                 <label for="message">Your Message</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="Message" required></textarea>
               </div>
               <button type="submit" class="contact-form-btn">Send</button>
             </form>
