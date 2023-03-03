@@ -274,7 +274,10 @@
                 </li>
               </ul>
               <div class="kb-plan-start-actions">
-                <a href="#" class="kb-plan-start-btn-primary"
+                <a
+                  href="https://buy.stripe.com/test_8wM293cNwfCZdos5kl"
+                  target="_blank"
+                  class="kb-plan-start-btn-primary"
                   >Buy Initial Plan £25</a
                 >
                 <a href="#" class="kb-plan-start-btn-secondary"
@@ -626,14 +629,19 @@
               Please answer the below questions and hit send, I look forward to
               hearing from you!
             </p>
-            <form class="booking-form">
+            <form
+              class="booking-form"
+              method="post"
+              autocomplete="off"
+              name="book-consultation"
+            >
               <div class="booking-form-group">
                 <label for="name">Your Name (required)</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="Name" required />
               </div>
               <div class="booking-form-group">
                 <label for="email">Your Email (required)</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="Email" required />
               </div>
               <div class="booking-form-group-flex">
                 <div
@@ -647,8 +655,8 @@
                     <input
                       type="radio"
                       id="weight-loss"
-                      name="goals"
-                      value="weight-loss"
+                      name="Goals"
+                      value="Weight Loss"
                       required
                     />
                   </div>
@@ -657,8 +665,8 @@
                     <input
                       type="radio"
                       id="build-muscle"
-                      name="goals"
-                      value="build-muscle"
+                      name="Goals"
+                      value="Build Muscle"
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
@@ -668,8 +676,8 @@
                     <input
                       type="radio"
                       id="look-good-&-feel-good"
-                      name="goals"
-                      value="look-good-&-feel-good"
+                      name="Goals"
+                      value="Look good, feel good"
                     />
                   </div>
                 </div>
@@ -682,14 +690,14 @@
                     <input
                       type="radio"
                       id="female"
-                      name="gender"
+                      name="Gender"
                       value="female"
                       required
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
                     <label for="male">Male</label>
-                    <input type="radio" id="male" name="gender" value="male" />
+                    <input type="radio" id="male" name="Gender" value="male" />
                   </div>
                   <div class="booking-form-group-radio-item">
                     <label for="prefer-not-to-disclose"
@@ -698,7 +706,7 @@
                     <input
                       type="radio"
                       id="prefer-not-to-disclose"
-                      name="gender"
+                      name="Gender"
                       value="prefer-not-to-disclose"
                     />
                   </div>
@@ -719,8 +727,8 @@
                     <input
                       type="radio"
                       id="I’ve-not-seen-results"
-                      name="preventing-goals"
-                      value="I’ve-not-seen-results"
+                      name="Preventing-Reason"
+                      value="I’ve not seen results"
                       required
                     />
                   </div>
@@ -731,8 +739,8 @@
                     <input
                       type="radio"
                       id="I’ve-lost-motivation"
-                      name="preventing-goals"
-                      value="I’ve-lost-motivation"
+                      name="Preventing-Reason"
+                      value="I’ve lost motivation"
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
@@ -742,8 +750,8 @@
                     <input
                       type="radio"
                       id="I’m-bored-of-my-current-workout-routine"
-                      name="preventing-goals"
-                      value="I’m-bored-of-my-current-workout-routine"
+                      name="Preventing-Reason"
+                      value="I’m bored of my current workout routine"
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
@@ -751,8 +759,8 @@
                     <input
                       type="radio"
                       id="I’ve-been-injured"
-                      name="preventing-goals"
-                      value="I’ve-been-injured"
+                      name="Preventing-Reason"
+                      value="I’ve been injured"
                     />
                   </div>
                 </div>
@@ -765,8 +773,8 @@
                     <input
                       type="radio"
                       id="18-to-24"
-                      name="age"
-                      value="18-to-24"
+                      name="Age"
+                      value="18 to 24"
                       required
                     />
                   </div>
@@ -775,8 +783,8 @@
                     <input
                       type="radio"
                       id="25-to-29"
-                      name="age"
-                      value="25-to-29"
+                      name="Age"
+                      value="25 to 29"
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
@@ -784,8 +792,8 @@
                     <input
                       type="radio"
                       id="30-to-39"
-                      name="age"
-                      value="30-to-39"
+                      name="Age"
+                      value="30 to 39"
                     />
                   </div>
                   <div class="booking-form-group-radio-item">
@@ -793,8 +801,8 @@
                     <input
                       type="radio"
                       id="Over-40"
-                      name="age"
-                      value="Over-40"
+                      name="Age"
+                      value="Over 40"
                     />
                   </div>
                 </div>
