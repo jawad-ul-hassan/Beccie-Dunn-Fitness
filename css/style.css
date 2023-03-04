@@ -53,7 +53,6 @@ a {
 .header {
   position: relative;
   padding-bottom: 85px;
-
 }
 
 .header::before {
@@ -112,11 +111,17 @@ a {
 }
 
 .header-navbar-start-logo {
-  width: 16rem;
+  width: 22rem;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.header-navbar-start-logo:hover {
+  transform: translateY(5px);
 }
 
 .header-navbar-end {
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
 }
 
 .header-navbar-end-links {
@@ -1236,4 +1241,69 @@ a {
 
 .footer-bdf-logo {
   width: 14.5rem;
+}
+
+/* ------Sweet-Alert----- */
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.swal2-popup {
+  max-width: 50rem;
+  width: 94%;
+  margin: 0 auto;
+}
+
+.swal2-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: 0.11em;
+  color: #353535;
+  text-transform: uppercase;
+}
+
+.swal2-html-container {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.065em;
+  color: #353535;
+}
+
+/* -----Scroll-To-Top-Btn----- */
+
+.scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 65px;
+  height: 65px;
+  background: #ffffff;
+  color: #1e302b;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: 0;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 100;
+}
+
+.scrollToTopBtn:hover {
+  background: #1e302b;
+  color: #ffffff;
+}
+
+.showScrollBtn {
+  opacity: 1;
+  visibility: visible;
 }
