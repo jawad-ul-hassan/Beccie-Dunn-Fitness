@@ -307,7 +307,7 @@ a {
       rgba(31, 30, 30, 0.69),
       rgba(31, 30, 30, 0.69)
     ),
-    url('../assets/online-coaching-bg.png');
+    url('../assets/online-coaching-bg.avif');
   background-size: cover;
   background-position: center;
 }
@@ -485,7 +485,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../assets/kb-plan-bg.png');
+  background-image: url('../assets/kb-plan-bg.avif');
   background-size: cover;
   background-position: center;
 }
@@ -933,7 +933,7 @@ a {
 /* -----Booking-Consultaion----- */
 
 .booking {
-  background-image: url('../assets//book-consultation.png');
+  background-image: url('../assets/book-consultation.avif');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -1116,7 +1116,7 @@ a {
 /* -----Contact-Me----- */
 
 .contact {
-  background-image: url('../assets/contact-me.png');
+  background-image: url('../assets/contact-me.avif');
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
