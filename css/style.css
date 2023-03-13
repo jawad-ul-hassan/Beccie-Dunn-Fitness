@@ -105,7 +105,7 @@ a {
 }
 
 .header-navbar-start-logo {
-  width: 25rem;
+  width: 24rem;
   object-fit: cover;
   transition: all 0.3s ease;
 }

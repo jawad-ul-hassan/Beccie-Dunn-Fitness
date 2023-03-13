@@ -67,7 +67,7 @@ function handleScroll() {
   var scrollableHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var GOLDEN_RATIO = 0.15;
+  var GOLDEN_RATIO = 0.25;
 
   if (document.documentElement.scrollTop / scrollableHeight > GOLDEN_RATIO) {
     if (!scrollToTopBtn.classList.contains('showScrollBtn'))
