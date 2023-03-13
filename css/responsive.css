@@ -153,7 +153,7 @@
   .header {
     padding-bottom: 65px;
     width: auto;
-      overflow-x: hidden;
+    overflow-x: hidden;
   }
 
   .header-title-img {
@@ -473,6 +473,7 @@
 
   .footer-credit {
     order: 2;
+    text-align: center;
   }
 
   .online-coaching-start-title,
@@ -539,5 +540,30 @@
   .header-content-circle-img {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .online-coaching-end-text-quotation:nth-child(1) {
+    top: -6rem;
+    width: 4.5rem;
+  }
+
+  .online-coaching-end-text-quotation:nth-child(2) {
+    bottom: -5rem;
+    width: 4.5rem;
+  }
+
+  .online-coaching-end-text::before {
+    right: 0;
+    top: -2.5rem;
+    width: 27rem;
+  }
+
+  .online-coaching-end-text {
+    font-size: 1.6rem;
+  }
+
+  .online-coaching-end-actions,
+  .kb-plan-start-actions {
+    row-gap: 2.5rem;
   }
 }

@@ -90,7 +90,7 @@ a {
 }
 
 .header-title-img {
-  width: 82rem;
+  width: 84rem;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -99,19 +99,13 @@ a {
 }
 
 .header-navbar {
-  padding-top: 35px;
+  padding-top: 25px;
   position: relative;
   z-index: 1;
 }
 
-.header-navbar-start {
-  display: flex;
-  align-items: center;
-  column-gap: 2.5rem;
-}
-
 .header-navbar-start-logo {
-  width: 22rem;
+  width: 25rem;
   object-fit: cover;
   transition: all 0.3s ease;
 }
@@ -207,6 +201,12 @@ a {
   text-transform: uppercase;
   color: #e5e5e5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 300ms ease-in-out;
+}
+
+.header-content-btn-primary:hover {
+  background: #ffffff;
+  color: #605288;
 }
 
 .header-content-btn-secondary {
@@ -224,6 +224,12 @@ a {
   color: #605288;
   border: 3px solid #605288;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 300ms ease-in-out;
+}
+
+.header-content-btn-secondary:hover {
+  background: #605288;
+  color: #ffffff;
 }
 
 .header-content-circle {
@@ -310,7 +316,7 @@ a {
   padding: 150px 0 100px;
   display: flex;
   justify-content: space-between;
-  gap: 2.5rem 5rem;
+  gap: 2.5rem 4.5rem;
   position: relative;
   z-index: 0;
 }
@@ -428,6 +434,12 @@ a {
   line-height: 2.2rem;
   letter-spacing: 0.08em;
   color: #e5e5e5;
+  transition: all 0.3s ease-in-out;
+}
+
+.online-coaching-end-btn-primary:hover {
+  background: #cdaeae;
+  color: #605288;
 }
 
 .online-coaching-end-btn-secondary {
@@ -443,6 +455,11 @@ a {
   line-height: 2.2rem;
   letter-spacing: 0.08em;
   color: #e5e5e5;
+  transition: all 0.3s ease-in-out;
+}
+
+.online-coaching-end-btn-secondary:hover {
+  background: rgba(217, 217, 217, 0.64);
 }
 
 .online-coaching-end-actions {
@@ -563,6 +580,11 @@ a {
   letter-spacing: 0.08em;
   color: #e5e5e5;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.kb-plan-start-btn-primary:hover {
+  transform: translateY(-5px);
 }
 
 .kb-plan-start-btn-secondary {
@@ -579,6 +601,11 @@ a {
   letter-spacing: 0.08em;
   color: #605288;
   text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.kb-plan-start-btn-secondary:hover {
+  transform: translateY(-5px);
 }
 
 .kb-plan-end {
@@ -696,8 +723,6 @@ a {
   line-height: 2rem;
   letter-spacing: 0.08em;
   color: #ffffff;
-  align-self: flex-end;
-  padding-bottom: 2.5px;
 }
 
 .about-bdf-end {
@@ -840,6 +865,12 @@ a {
   text-transform: uppercase;
   color: #e5e5e5;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-start-btn-primary:hover {
+  background: #e5e5e5;
+  color: #605288;
 }
 
 .testimonials-start-btn-secondary {
@@ -856,6 +887,12 @@ a {
   text-transform: uppercase;
   color: #353333;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+  transition: all 0.3s ease-in-out;
+}
+
+.testimonials-start-btn-secondary:hover {
+  background: #ffffff;
+  color: #353333;
 }
 
 .testimonials-end {
@@ -1069,6 +1106,11 @@ a {
   text-transform: uppercase;
   cursor: pointer;
   margin-left: auto;
+  transition: all 0.3s ease;
+}
+
+.booking-form-btn:hover {
+  background-color: #e5e5e5;
 }
 
 /* -----Contact-Me----- */
@@ -1198,13 +1240,18 @@ a {
   cursor: pointer;
   margin-left: auto;
   margin-top: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form-btn:hover {
+  background-color: #e5e5e5;
 }
 
 /* -----Footer----- */
 
 .footer {
   background-color: #ffffff;
-  padding: 25px 0;
+  padding: 15px 0;
 }
 
 .footer-content {
@@ -1240,7 +1287,7 @@ a {
 }
 
 .footer-bdf-logo {
-  width: 14.5rem;
+  width: 12.5rem;
 }
 
 /* ------Sweet-Alert----- */
@@ -1279,18 +1326,16 @@ a {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 65px;
-  height: 65px;
-  background: #ffffff;
-  color: #1e302b;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  border: 0;
-  font-size: 2.4rem;
+  width: 50px;
+  height: 50px;
+  background: #605288;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 0.5rem;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
@@ -1299,8 +1344,7 @@ a {
 }
 
 .scrollToTopBtn:hover {
-  background: #1e302b;
-  color: #ffffff;
+  background: rgba(96, 82, 136, 0.95);
 }
 
 .showScrollBtn {
