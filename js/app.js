@@ -9,7 +9,7 @@ headerHamburgerBtn.addEventListener('click', () => {
 
 // Consultation Form
 const scriptURL_consultation =
-  'https://script.google.com/macros/s/AKfycbzilU8R_57IInY8IO8_bysS5HhYdEV0katvl1gBQh7Ou-yzgzQIrpPyWWFUvNzqWDv4WQ/exec';
+  'https://script.google.com/macros/s/AKfycbwyDbe9EgcOyZ2icbEOWiD-IXNwn1-coqTpBZV71hbW7P_MOgn9TeEaFcmai6A6EdF3/exec';
 const consultation_form = document.forms['book-consultation'];
 
 consultation_form.addEventListener('submit', e => {
@@ -36,7 +36,7 @@ consultation_form.addEventListener('submit', e => {
 
 //Contact Form
 const scriptURL_contact =
-  'https://script.google.com/macros/s/AKfycbwDMM6n1KHvbRSZMJwpvcGTwSBuhdXgeXqsj9OwfWNt-CRWpiKsxF5fYfNFEK_q_RMc/exec';
+  'https://script.google.com/macros/s/AKfycbxgrI9d9YAvu4FTFe06Y_0-vHEFfYTqTjzo5yiIO8UzdV-qAdWMTj8KVIwgr6dcm4MzfA/exec';
 const contact_form = document.forms['contact-me'];
 
 contact_form.addEventListener('submit', e => {
@@ -91,5 +91,6 @@ function scrollToTop() {
 window.addEventListener('load', function () {
   setTimeout(function () {
     document.querySelector('.loader-wrapper').style.display = 'none';
+    document.querySelector('.body-loader').style.overflow = 'auto';
   }, 1500); // 1000ms = 1 second
 });
